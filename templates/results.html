@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranking Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; 
+            font-family: Arial, sans-serif; 
+            text-align: center;
+            }
+        table { width: 60%; margin: auto; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Ranked Resumes</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Resume Name</th>
+            <th>Similarity Score (%)</th>
+        </tr>
+        {% for resume in ranked_resumes %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ resume.name }}</td>
+            <td>{{ resume.score }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
