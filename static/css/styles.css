@@ -1,0 +1,36 @@
+body {
+    background-image: url('bg.webp'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;  
+    font-family: Arial, sans-serif;
+    color: #333; 
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+}
+
+/* Upload box styling */
+.upload-box {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(233, 236, 239, 0.9); /* Slight transparency */
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    background-color: rgba(214, 228, 240, 0.9);
+}
+
+input[type="file"] {
+    display: none;
+}
