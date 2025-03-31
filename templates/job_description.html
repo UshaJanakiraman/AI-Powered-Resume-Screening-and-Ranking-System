@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Job Description</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; 
+            font-family: Arial, sans-serif; 
+            text-align: center;
+            }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 50%; margin: auto; }
+        textarea, button { width: 80%; padding: 10px; margin: 10px; }
+        button { background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Job Description</h2>
+        <form action="/" method="post">
+            <textarea name="job_description" rows="4" cols="50" placeholder="Enter job description..." required></textarea>
+            <br>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>
